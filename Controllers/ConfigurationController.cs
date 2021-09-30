@@ -1,18 +1,17 @@
 ﻿using static WebApp_OpenIDConnect_DotNet.Constants;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc;
+using WebApp_OpenIDConnect_DotNet.ViewModels;
+using WebApp_OpenIDConnect_DotNet.Managers;
+using WebApp_OpenIDConnect_DotNet.Controllers.WebApp_OpenIDConnect_DotNet.Extensions;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Text;
 
 namespace WebApp_OpenIDConnect_DotNet.Controllers
 {
-    using System.Linq;
-    using Microsoft.AspNetCore.Mvc;
-    using ViewModels;
-    using Managers;
-    using WebApp_OpenIDConnect_DotNet.Extensions;
-    using Microsoft.Extensions.Configuration;
-
     public class ConfigurationController : BaseController
     {
-
-
         private readonly PolicyManager _policyManager;
         public ConfigurationController(IConfiguration configuration)
         {
@@ -58,9 +57,6 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
 
     namespace WebApp_OpenIDConnect_DotNet.Extensions
     {
-        using System;
-        using System.Text;
-
         public static class StringExtension
         {
             public static string ToBase64Encode(this string source)
