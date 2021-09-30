@@ -15,6 +15,8 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
 
     public class ConfigurationController : BaseController
     {
+
+
         private readonly PolicyManager _policyManager;
         public ConfigurationController(IConfiguration configuration)
         {
