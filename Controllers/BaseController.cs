@@ -1,16 +1,11 @@
-﻿namespace WebApp_OpenIDConnect_DotNet.Controllers
-{
-    using System;
-    using Managers;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Filters;
-    using Microsoft.Net.Http.Headers;
+﻿using System;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
+namespace WebApp_OpenIDConnect_DotNet.Controllers
+{
     public class BaseController : Controller
     {
-
-
         public void CreateCookie(string key, string value)
         {
             var option = new CookieOptions();

@@ -2,16 +2,12 @@
 
 namespace WebApp_OpenIDConnect_DotNet.Controllers
 {
-    using System;
     using System.Linq;
     using Microsoft.AspNetCore.Mvc;
     using ViewModels;
     using Managers;
-    using Microsoft.AspNetCore.Http;
-    using System.Collections.Generic;
     using WebApp_OpenIDConnect_DotNet.Extensions;
     using Microsoft.Extensions.Configuration;
-    using Microsoft.AspNetCore.Authentication.Cookies;
 
     public class ConfigurationController : BaseController
     {
