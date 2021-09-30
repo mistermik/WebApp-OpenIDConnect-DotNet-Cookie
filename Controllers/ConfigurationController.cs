@@ -40,11 +40,12 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
 
         public IActionResult Configure(ConfigurationViewModel configurationViewModel)
         {
-            if (Request.Form.Any(x => x.Key == "setDefalut_action"))
-            {
-                RemoveCookie(DemoCookies.DefaultSigninPolicyKey);
-            }
-            else if (Request.Form.Any(x => x.Key == "update_action"))
+            //if (Request.Form.Any(x => x.Key == "setDefalut_action"))
+            //{
+            //    RemoveCookie(DemoCookies.DefaultSigninPolicyKey);
+            //}
+            //else 
+            if (Request.Form.Any(x => x.Key == "update_action"))
             {
                 CreateCookie(DemoCookies.DefaultSigninPolicyKey, configurationViewModel.DefaultSUSIPolicy.ToBase64Encode());
 

@@ -415,7 +415,7 @@ namespace WebApp_OpenIDConnect_DotNet
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Configuration}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
